@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ЛР 5 - Unite Gallery</title>
+
+<script type='text/javascript' src='https://www.jqueryscript.net/demo/Fully-Functional-jQuery-Image-Video-Gallery-Plugin-Unite-Gallery/unitegallery/js/jquery-11.0.min.js'></script>
+<script type='text/javascript' src='https://www.jqueryscript.net/demo/Fully-Functional-jQuery-Image-Video-Gallery-Plugin-Unite-Gallery/unitegallery/js/unitegallery.min.js'></script>
+<link rel='stylesheet' href='https://www.jqueryscript.net/demo/Fully-Functional-jQuery-Image-Video-Gallery-Plugin-Unite-Gallery/unitegallery/css/unite-gallery.css' type='text/css' />
+<script type='text/javascript' src='https://www.jqueryscript.net/demo/Fully-Functional-jQuery-Image-Video-Gallery-Plugin-Unite-Gallery/unitegallery/themes/default/ug-theme-default.js'></script>
+<link rel='stylesheet' href='https://www.jqueryscript.net/demo/Fully-Functional-jQuery-Image-Video-Gallery-Plugin-Unite-Gallery/unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+
+</head>
+
+
+<body>
+<div id="gallery" style="display:none;">
+
+  <img alt="Preview Image 1"
+       src="Images/pic1.png"
+       data-image="Images/pic1.png"
+       data-description="Preview Image 1 Description">
+
+  <img alt="Preview Image 2"
+       src="Images/pic2.png"
+       data-image="Images/pic2.png"
+       data-description="Preview Image 2 Description">
+
+  <img alt="Preview Image 3"
+       src="Images/pic3.png"
+       data-image="Images/pic3.png"
+       data-description="Preview Image 3 Description">
+
+
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+        jQuery(document).ready(function(){
+  jQuery("#gallery").unitegallery();
+});
+
+	</script>

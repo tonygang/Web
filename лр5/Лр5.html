@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab5</title>
+  <link rel="stylesheet" href="lr5 Style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+   <script>
+  $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+	</script>
+	<script>
+  $( function() {
+    $( "#slider" ).slider();
+  } );
+  </script>
+</head>
+<body>
+<div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>Date: <input type="text" id="datepicker"></p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+   <div id="polzunok"></div>
+	<b>Value: <span style="color:green" id="result-polzunok"></span></b>
+  </div>
+  </div>
+</div>
+<div class="weahter">
+	<a class="weatherwidget-io" href="https://forecast7.com/ru/50d4530d52/kiev/" data-label_1="KYIV" data-label_2="WEATHER" data-theme="original" >KYIV WEATHER</a>
+</div>
+
+<footer>
+  <div class="black">
+   <p class="creators">Виконали студенти групи ІА-72 Алексєєнко Антон та Гуртовий Святослав</p>
+  </div>
+  <div>
+   <a href="https://www.facebook.com/"><img src="fb.png" alt="error"></a>
+  </div>
+
+
+ </footer>
+</body>
+</html>
+<script type="text/javascript">
+    $("#polzunok").slider({
+        animate: "slow",
+        range: "min",
+        value: 100,
+        slide : function(event, ui) {
+            $("#result-polzunok").text(ui.value);
+        }
+    });
+    $( "#result-polzunok" ).text($( "#polzunok" ).slider( "value" ));
+
+
+
+
+</script>
+<script>
+!function(d,s,id)
+{var js,fjs=d.getElementsByTagName(s)[0];
+if(!d.getElementById(id)){js=d.createElement(s);
+js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+fjs.parentNode.insertBefore(js,fjs);}}(
+document,'script','weatherwidget-io-js');
+</script>

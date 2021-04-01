@@ -1,0 +1,38 @@
+footer {
+ clear: both;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+.black {
+ background-color: black;
+ width: 95%;
+}
+.creators {
+ color: white;
+ margin-left: 20px;
+}
+.weahter{
+	margin: 50px;
+	padding: 20px;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+}
+
+
+.center {
+	position: relative; /* or absolute */
+
+    top: 50%;
+    margin: 50px;
+    left: 40%;
+}
+
+@font-face {
+  font-family: 'DIGITAL';
+  src: url('https://cssdeck.com/uploads/resources/fonts/digii/DS-DIGII.TTF');
+}
