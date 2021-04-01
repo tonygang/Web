@@ -1,0 +1,43 @@
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+html, body{
+ height: 100%;
+}
+.wrapper{
+ width: 100%;
+ margin: auto;
+ height: 100%;
+}
+.header{
+ height: 100px;
+ background: blue;
+}
+.footer{
+ height: 40px;
+ background: blue;
+}
+.left{
+ width: 550px;
+ background: yellow;
+}
+.content{
+ width: 750px;
+ background: #fff;
+ color: #000;
+}
+p{
+ padding: 10px;
+}

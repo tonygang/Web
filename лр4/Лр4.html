@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<button onclick="Change();" >Change array</button>
+	<button onclick="Sort();">Sort array</button>
+</body>
+</html>
+<script type="text/javascript">
+	let arr = [1, 45, 567, 45, 2342, 78, 12, -889, 100, 45, -123, 154, 234, 756, 33, 11, -13, 99];
+	function Change() {
+		
+		let arr2 = [...arr];
+		var max = -Infinity;
+		var maxi=0;
+		var mini=0;
+		var min = Infinity;
+		for (let i = 1; i < arr2.length; i+=1) {
+			if (arr2[i] > max) {
+			max = arr2[i];
+			maxi=i;
+			}
+			
+		}
+		for (let i = 0; i < arr2.length; i+=1) {
+			if (arr2[i] < min) {
+			min = arr2[i];
+			mini=i;
+			}
+			
+		}
+		arr2[mini] = max;
+		arr2[maxi] = min;
+		alert(arr);
+		alert(arr2);
+		
+	}
+	function Sort()       // A - массив, который нужно
+	{                               // отсортировать по возрастанию.
+    var n = arr.length;
+    for (var i = 0; i < n; i++)
+     { var v = arr[i], j = i-1;
+       while (j >= 0 && arr[j] > v)
+        { arr[j+1] = arr[j]; j--; }
+       arr[j+1] = v;
+     }                    
+	alert(arr); // На выходе сортированный по возрастанию массив A.
+	}
+</script>
